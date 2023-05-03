@@ -53,3 +53,9 @@ form {
   align-items: start;
   text-align: left;
 }
+
+ul {
+  margin-top: 2em;
+  text-align: right;
+  padding: 1.5em;
+}

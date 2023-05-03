@@ -1,21 +1,29 @@
 import React from "react";
-import { useInput } from "../hooks/Hooks";
 
-const Income = () => {
+import { useInput } from "../hooks/Hooks";
+import { CashFlowData, CashFlowProps } from "../types/Types"
+import CashFlowsList from "./CashFlowsList";
+
+const Income = (props: CashFlowProps) => {
     const sourceInput = useInput();
     const amountInput = useInput();
     const dateInput = useInput();
 
-    const printForm = (e: React.FormEvent) => {
+    const submitIncomeForm = (e: React.FormEvent) => {
         e.preventDefault();
-        console.log("source: ", sourceInput.value);
-        console.log("amount: ", parseInt(amountInput.value));
-        console.log("date: ", dateInput.value);
+
+        const inputData: CashFlowData = { 
+            source: sourceInput.value, 
+            amount: parseInt(amountInput.value), 
+            date: dateInput.value 
+        }
+
+        props.onSubmit(inputData);
     }
 
     return (
         <div className="grid-income grid-item">
-            <form onSubmit={(e) => printForm(e)}>
+            <form onSubmit={(e) => submitIncomeForm(e)}>
                 <div className="input-wrapper">
                     <label htmlFor="incomeSource">Income source</label>
                     <input 
@@ -48,6 +56,7 @@ const Income = () => {
                     <button type="submit" name="incomeSubmit" id="incomeSubmit">Add income</button>
                 </div>
             </form>
+            <CashFlowsList onSubmit={()=>{}} cashFlows={props.cashFlows} />
         </div>
     )
 }
