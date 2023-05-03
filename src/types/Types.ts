@@ -8,3 +8,8 @@ export interface CashFlowProps {
   onSubmit: Function;
   cashFlows: CashFlowData[];
 }
+
+export interface BalanceProps {
+  onSubmit: Function;
+  balance: number;
+}

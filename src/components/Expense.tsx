@@ -56,7 +56,9 @@ const Expense = (props: CashFlowProps) => {
                     <button type="submit" name="expenseSubmit" id="expenseSubmit">Add expense</button>
                 </div>
             </form>
-            <CashFlowsList onSubmit={()=>{}} cashFlows={props.cashFlows} />
+            <div className="cash-flow-list">
+                <CashFlowsList onSubmit={()=>{}} cashFlows={props.cashFlows} />
+            </div>
         </div>
     )
 }

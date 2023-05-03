@@ -24,6 +24,9 @@
   background-color: rgba(0, 0, 0, 0.25);
   border-radius: 0.25em;
   padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
 
 .grid-income {
@@ -55,7 +58,18 @@ form {
 }
 
 ul {
-  margin-top: 2em;
   text-align: right;
   padding: 1.5em;
+}
+
+.cash-flow-list {
+  overflow: hidden;
+  overflow-y: scroll;
+  box-sizing: border-box;
+  white-space: nowrap;
+  height: 50%;
+}
+
+.center {
+  align-self: center;
 }
