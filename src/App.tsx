@@ -39,7 +39,7 @@ function App() {
       <div className='ui-grid'>
         <Income onSubmit={ (data: CashFlowData) => addIncome(data) } cashFlows={incomes} />
         <Expense onSubmit={ (data: CashFlowData) => addExpense(data) } cashFlows={expenses} />
-        <Savings />
+        <Savings savings={savings} />
         <Transfer onSubmit={ (amount: number) => transferToSavings(amount) } balance={balance} />
       </div>
     </div>

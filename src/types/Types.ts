@@ -13,3 +13,7 @@ export interface BalanceProps {
   onSubmit: Function;
   balance: number;
 }
+
+export interface SavingsProps {
+  savings: number;
+}
