@@ -1,7 +1,7 @@
 import React from "react";
 
 import { CashFlowData, CashFlowProps } from "../types/Types";
-import { useInput } from "../hooks/Hooks";
+import { useInput } from "../hooks/hooks";
 import CashFlowsList from "./CashFlowsList";
 
 const Expense = (props: CashFlowProps) => {

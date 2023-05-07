@@ -53,7 +53,7 @@ form {
   flex-direction: column;
   gap: 0.25em;
   width: 50%;
-  align-items: start;
+  align-items: flex-start;
   text-align: left;
 }
 
@@ -77,5 +77,5 @@ ul {
 .savings-info-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
 }

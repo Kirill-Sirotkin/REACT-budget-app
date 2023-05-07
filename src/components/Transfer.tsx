@@ -1,7 +1,7 @@
 import React from "react";
 
 import { BalanceProps } from "../types/Types";
-import { useInput } from "../hooks/Hooks";
+import { useInput } from "../hooks/hooks";
 
 const Transfer = (props: BalanceProps) => {
     const balanceToSavings = useInput();

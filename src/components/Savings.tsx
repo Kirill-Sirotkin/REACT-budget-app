@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import { SavingsProps } from "../types/Types";
-import { useInput } from "../hooks/Hooks";
+import { useInput } from "../hooks/hooks";
 
 const Savings = (props: SavingsProps) => {
     const [targetSavings, setTargetSavings] = useState(0);
