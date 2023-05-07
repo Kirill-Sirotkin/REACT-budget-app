@@ -2,12 +2,16 @@
 
 This assignment requires also TypeScript when passing props to React Components
 
+## Visit the deployed page
+
+https://startling-biscotti-64f925.netlify.app/
+
 ## Requirements
 
 1. Create a simple one-page application to store incomes and expenses, and set
-saving target.
+   saving target.
 2. Account balance can be calculated from incomes, expenses, and saving.
-`incomes - expenses - saving = balance`
+   `incomes - expenses - saving = balance`
 3. Users should be able to add new incomes, expenses, transfer from balance account to saving account, and reset saving target. Balance should never be negative number.
 4. Use React Hooks where applicable. TypeScript must be used at least for the props types.
 5. Style is not the priority in this assignment.
@@ -23,10 +27,8 @@ saving target.
 
 Be creative with your style!
 
-![demo1](demo1.png)
----
+## ![demo1](demo1.png)
 
-![demo2](demo2.png)
----
+## ![demo2](demo2.png)
 
 ![demo3](demo3.png)
