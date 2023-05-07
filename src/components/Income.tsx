@@ -1,6 +1,6 @@
 import React from "react";
 
-import { useInput } from "../hooks/hooks";
+import { useInput } from "../hooks/Hooks";
 import { CashFlowData, CashFlowProps } from "../types/Types"
 import CashFlowsList from "./CashFlowsList";
 
